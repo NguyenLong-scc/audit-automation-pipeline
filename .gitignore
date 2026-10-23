@@ -1,0 +1,40 @@
+# Operating-system and Python artifacts
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated application data
+artifacts/
+data/
+uploads/
+client_data/
+working_papers/
+evidence/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+
+# Audit documents may contain confidential client information. Add only
+# deliberately anonymised fixtures with `git add -f <path>` after review.
+*.doc
+*.docx
+*.pdf
+*.xls
+*.xlsx
+*.csv
+*.zip
+
+# Local screenshots are presentation artifacts, not application source.
+Screenshot *.png
