@@ -21,6 +21,7 @@ The included examples are fictional. The application works without an API key in
 ### 1. End-to-end flow
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e8f0fe','primaryTextColor':'#111111','primaryBorderColor':'#1a73e8','lineColor':'#6e7781','textColor':'#111111','edgeLabelBackground':'#ffffff','tertiaryColor':'#ffffff','fontSize':'15px'}}}%%
 flowchart TD
     A["Select approved report standard"] --> B["Enter engagement facts<br/>and findings register"]
     B --> C["Attach files (optional)<br/>style examples / engagement evidence"]
@@ -44,6 +45,7 @@ flowchart TD
 ### 2. Generator - critic - revision loop
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e8f0fe','primaryTextColor':'#111111','primaryBorderColor':'#1a73e8','lineColor':'#6e7781','textColor':'#111111','edgeLabelBackground':'#ffffff','tertiaryColor':'#ffffff','fontSize':'15px'}}}%%
 flowchart TD
     S["Initial draft from generator"] --> C["Independent critic grades draft<br/>score 0-100 plus issues"]
     C --> P{"Pass? status is pass,<br/>score at least 85,<br/>no blocker issues"}
@@ -64,6 +66,7 @@ Critic scoring weights: 40 / 20 / 15 / 15 / 10 across the grading criteria. Dete
 ### 3. AI intake gateway and governed export
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e8f0fe','primaryTextColor':'#111111','primaryBorderColor':'#1a73e8','lineColor':'#6e7781','textColor':'#111111','edgeLabelBackground':'#ffffff','tertiaryColor':'#ffffff','fontSize':'15px'}}}%%
 flowchart TD
     U["Upload approved report<br/>DOCX, PDF with text layer, JSON, TXT<br/>up to 10 MB"] --> H["Compute SHA-256 checksum"]
     H --> D{"Duplicate content?"}
